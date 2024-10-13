@@ -223,7 +223,7 @@
       - `created_at` (timestamp)
       - `updated_at` (timestamp)
 
-- `/api/v1/moderator/reported/all` - GET
+- `/api/v1/moderator/reported/tasks/all` - GET
   - Request Body: 
     - `token`
   - Response:
@@ -238,6 +238,48 @@
       - `comments` (Array) (Comments that the task has)
       - `upvotes` (int)
       - `downvotes` (int)
+      - `created_at` (timestamp)
+      - `updated_at` (timestamp)
+
+- `/api/v1/moderator/reported/tasks/:id` - GET
+  - Request Body: 
+     - `token`
+     - `taskID`
+  - Response:
+    - task (Object)
+      - `id` (String)
+      - `title` (String)
+      - `description` (String)
+      - `braincells` (int)
+      - `category` (String) (optional)
+      - `picture` (String) (optional)
+      - `tags` (Array) (optional)
+      - `comments` (Array) (Comments that the task has)
+      - `upvotes` (int)
+      - `downvotes` (int)
+      - `created_at` (timestamp)
+      - `updated_at` (timestamp)
+
+- `/api/v1/moderator/reported/comments/all` - GET
+  - Request Body: 
+    - `token`
+  - Response:
+    - comments (Array)
+      - `id` (String)
+      - `userID` (String)
+      - `comment` (String)
+      - `created_at` (timestamp)
+      - `updated_at` (timestamp)
+
+- `/api/v1/moderator/reported/comments/:id` - GET
+  - Request Body: 
+      - `token`
+      - `commentID`
+  - Response:
+    - comment (Object)
+      - `id` (String)
+      - `userID` (String)
+      - `comment` (String)
       - `created_at` (timestamp)
       - `updated_at` (timestamp)
 
