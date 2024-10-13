@@ -6,16 +6,16 @@
 # Objectives
 
 - User (Object)
-  - Username (String)
-  - role (String) (User, Moderator, Admin)
-  - Karma (int) 
-  - created_at (timestamp)
-  - updated_at (timestamp)
-  - optional Picture
-  - Badges (Badges that the user has earned)
-  - Tasks (Tasks that the user has posted)
-  - Comments (Comments that the user has made)
-  - optional: Bio
+    - Username (String)
+    - role (String) (User, Moderator, Admin)
+    - Karma (int) 
+    - created_at (timestamp)
+    - updated_at (timestamp)
+    - optional Picture
+    - Badges (Badges that the user has earned)
+    - Tasks (Tasks that the user has posted)
+    - Comments (Comments that the user has made)
+    - optional: Bio
 
 - tasks (Object)
     - `id` (String)
@@ -31,7 +31,13 @@
     - `created_at` (timestamp)
     - `updated_at` (timestamp)
 
-
+- comments (Object)
+    - `id` (String)
+    - `comment` (String)
+    - `created_at` (timestamp)
+    - `updated_at` (timestamp)
+    - `taskID` (String)
+    - `userID` (String)
 ## Endpoints
 
 - `/api/v1/auth/signup` - POST
