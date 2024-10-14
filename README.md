@@ -1,7 +1,7 @@
 # HowManyBraincells
 
 Social Media Platform: 
-- Domain: Braincells.me
+- Domain: Braincells.net
 - Description: A social media platform that allows users to post tasks and how many braincells it takes to complete the task. You can comment, upvote or downvote a post.
 
 ## Features
